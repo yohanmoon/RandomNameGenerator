@@ -1,0 +1,36 @@
+﻿<Window x:Name="CCAD2_Random_Name_Generator" x:Class="RandomNameGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RandomNameGenerator"
+        mc:Ignorable="d"
+        Title="CCAD2_Random_Name_Generator"  Height="600" Width="400
+        " WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize">
+    <Grid x:Name="background" Background="LightBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="168*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listName" Margin="25,25,86,25" Background="White" FontSize="20" Grid.ColumnSpan="2">
+            <ListBoxItem x:Name="Name1" Content="'Jay'"/>
+            <ListBoxItem x:Name="Name2" Content="Austin"/>
+            <ListBoxItem x:Name="Name3" Content="'Nguyen'"/>
+            <ListBoxItem x:Name="Name4" Content="Daniel"/>
+            <ListBoxItem x:Name="Name5" Content="Dennis"/>
+            <ListBoxItem x:Name="Name6" Content="Erick"/>
+            <ListBoxItem x:Name="Name7" Content="Joe"/>
+            <ListBoxItem x:Name="Name8" Content="Joshua"/>
+            <ListBoxItem x:Name="Name9" Content="Lumiere"/>
+            <ListBoxItem x:Name="Name10" Content="Michael"/>
+            <ListBoxItem x:Name="Name11" Content="'Torrie'"/>
+            <ListBoxItem x:Name="Name12" Content="Scott"/>
+            <ListBoxItem x:Name="Name13" Content="'Billy'"/>
+            <ListBoxItem x:Name="Name14" Content="Yohan"/>
+        </ListBox>
+        <Button x:Name="btnPickName" Content="Pick Random Name" HorizontalAlignment="Left" Margin="132,41,0,0" VerticalAlignment="Top" Height="33" Width="140" Click="btnPickName_Click" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBox x:Name="textRandomName" Margin="112,100,30,350" TextWrapping="Wrap" Grid.ColumnSpan="3" Grid.Column="1" Height="50"/>
+    </Grid>
+</Window>
